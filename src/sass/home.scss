@@ -1,0 +1,108 @@
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+// Banner
+.banner-img {
+  background: url("../img/banner.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  align-self: center;
+  border: 10px double #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  h1 {
+    color: white;
+    font-size: 30px;
+    font-family: "Carter One", cursive;
+  }
+}
+
+//Home-container
+.home-container {
+  width: 95%;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+// ShopNow
+
+.shopnow-title {
+  text-align: left;
+  padding-top: 30px;
+  font-size: 25px;
+  font-family: "Carter One", cursive;
+  color: #313848;
+}
+
+.items {
+  width: 100%;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.item {
+  display: flex;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px;
+}
+
+.shopnow-container {
+  align-self: center;
+  h2 {
+    font-family: "Carter One", cursive;
+    font-size: 25px;
+    color: #313848;
+  }
+  .btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px;
+    color: #313848;
+    border: 2px solid #313848;
+    cursor: pointer;
+    &:hover {
+      color: white;
+      background: #313848;
+    }
+  }
+}
+
+//Featured
+.featured {
+  padding-top: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.featured-title {
+  text-align: left;
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-family: "Carter One", cursive;
+  color: #313848;
+}
+
+.featured-item {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  img {
+    margin: 0 auto;
+  }
+  h4 {
+    padding-top: 10px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  font-size: 25px;
+}
