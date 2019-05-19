@@ -32,9 +32,12 @@ main {
 
 // ShopNow
 
+.shopnow {
+  padding-top: 30px;
+}
+
 .shopnow-title {
   text-align: left;
-  padding-top: 30px;
   font-size: 25px;
   font-family: "Carter One", cursive;
   color: #313848;
@@ -50,7 +53,8 @@ main {
 
 .item {
   display: flex;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   padding: 10px;
 }
 
@@ -68,6 +72,7 @@ main {
     color: #313848;
     border: 2px solid #313848;
     cursor: pointer;
+    transition: 0.8s;
     &:hover {
       color: white;
       background: #313848;
@@ -105,4 +110,44 @@ main {
 .slick-next:before {
   color: black;
   font-size: 25px;
+}
+
+//Deals
+
+.deals {
+  padding-top: 60px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.deal-container {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.deal-info {
+  padding: 20px 0;
+  h2 {
+    font-size: 30px;
+    font-family: "Carter One", cursive;
+    text-align: center;
+    color: #313848;
+  }
+  h4 {
+    font-size: 20px;
+    padding: 10px 0;
+    font-family: "Carter One", cursive;
+    text-align: center;
+    color: #313848;
+  }
+  p {
+    text-align: center;
+    color: #666;
+    color: #313848;
+  }
 }

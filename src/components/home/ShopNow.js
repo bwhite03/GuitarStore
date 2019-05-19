@@ -2,7 +2,7 @@ import React from "react";
 
 const ShopNow = () => {
   return (
-    <section>
+    <section className="shopnow">
       <h2 className="shopnow-title">Shop Now</h2>
       <div className="items">
         <div className="item acoustic">
