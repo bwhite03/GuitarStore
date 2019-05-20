@@ -9,6 +9,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1520px;
 }
 
 .footer-logo {
@@ -74,5 +76,23 @@ footer {
         color: #f0efef;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-logo {
+    padding: 20px;
+  }
+  .footer-sign-up {
+    padding: 20px;
   }
 }

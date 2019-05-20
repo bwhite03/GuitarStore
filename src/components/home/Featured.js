@@ -7,11 +7,22 @@ const Featured = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
   };
   return (
     <section className="featured">
-      <h2 className="featured-title">Our Featured Products</h2>
+      <h2 className="featured-title">Featured Products</h2>
       <div>
         <Slider {...settings}>
           <div className="featured-item">

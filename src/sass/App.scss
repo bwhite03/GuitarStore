@@ -5,3 +5,8 @@
 @import "home.scss";
 @import "footer.scss";
 @import url("https://fonts.googleapis.com/css?family=Carter+One|Roboto&display=swap");
+
+html,
+body {
+  overflow-x: hidden;
+}
