@@ -1,18 +1,16 @@
 import React from "react";
 
-const Items = () => {
+const Items = props => {
   return (
-    <div className="items-container">
-      <div className="items-item">
-        <div className="item-img">
-          <img src="img/featured/slider1.jpg" />
-        </div>
-        <div className="title-price">
-          <h2>Gibson Les Paul Standard '60s Electric Guitar</h2>
-          <h3>$100.00</h3>
-        </div>
-        <button>Add To Cart</button>
+    <div className="items-item">
+      <div className="item-img">
+        <img src={props.item.image} />
       </div>
+      <div className="title-price">
+        <h2>{props.item.title}</h2>
+        <h3>${props.item.price}</h3>
+      </div>
+      <button>Add To Cart</button>
     </div>
   );
 };

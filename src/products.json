@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "type": "acoustic-guitar",
+    "image": "img/products/epiphone-EJ-200.jpg",
+    "title": "Epiphone EJ-200SCE",
+    "price": "105"
+  },
+  {
+    "id": 2,
+    "type": "acoustic-guitar",
+    "image": "img/products/fender-FA-125.jpg",
+    "title": "Fender FA-125 Dreadnought",
+    "price": "149"
+  },
+  {
+    "id": 3,
+    "type": "electric-guitar",
+    "image": "img/products/gibson-les-paul-standard-60s.jpg",
+    "title": "Gibson Les Paul Standard '60s",
+    "price": "2499"
+  },
+  {
+    "id": 4,
+    "type": "acoustic-guitar",
+    "image": "img/products/ibanez-GRGR120EX.jpg",
+    "title": "Ibanez GRGR120EX",
+    "price": "199"
+  },
+  {
+    "id": 5,
+    "type": "electric-bass",
+    "image": "img/products/yamaha-TRBX174EW.jpg",
+    "title": "Yamaha TRBX174EW Mango Wood",
+    "price": "224"
+  },
+  {
+    "id": 6,
+    "type": "electric-bass",
+    "image": "img/products/squier-FSR.jpg",
+    "title": "Squier FSR Classic Vibe '70s",
+    "price": "399"
+  }
+]

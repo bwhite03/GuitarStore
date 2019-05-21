@@ -1,14 +1,28 @@
 import React from "react";
 import Sort from "./Sort";
 import Items from "./Items";
+import { connect } from "react-redux";
 
-const Products = () => {
+const Products = props => {
   return (
     <section className="products">
       <Sort />
-      <Items />
+      <div className="items-container">
+        {props.products.map((items, index) => (
+          <Items item={items} key={index} />
+        ))}
+      </div>
     </section>
   );
 };
 
-export default Products;
+const mapStateToProps = state => {
+  return {
+    products: state.filterReducer.products
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  null
+)(Products);
