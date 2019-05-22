@@ -1,10 +1,17 @@
 import React from "react";
+import { connect } from "react-redux";
+import {
+  selectType,
+  selectPrice,
+  selectBrand,
+  filter
+} from "../../actions/filterActions";
 
-const Filter = () => {
+const Filter = props => {
   return (
     <section className="filter">
       <label className="filter-label">Type</label>
-      <select className="filter-menu">
+      <select className="filter-menu" onChange={props.selectType}>
         <option value="all" defaultValue>
           All
         </option>
@@ -13,7 +20,7 @@ const Filter = () => {
         <option value="electric-bass">Electric Bass</option>
       </select>
       <label className="filter-label">Price</label>
-      <select className="filter-menu">
+      <select className="filter-menu" onChange={props.selectPrice}>
         <option value="all" defaultValue>
           All
         </option>
@@ -23,7 +30,7 @@ const Filter = () => {
         <option value="650">650+</option>
       </select>
       <label className="filter-label">Brand</label>
-      <select className="filter-menu">
+      <select className="filter-menu" onChange={props.selectBrand}>
         <option value="all" defaultValue>
           All
         </option>
@@ -34,8 +41,12 @@ const Filter = () => {
         <option value="squier">Squier</option>
         <option value="yamaha">Yamaha</option>
       </select>
+      <button onClick={props.filter}>Filter</button>
     </section>
   );
 };
 
-export default Filter;
+export default connect(
+  null,
+  { selectType, selectPrice, selectBrand, filter }
+)(Filter);
