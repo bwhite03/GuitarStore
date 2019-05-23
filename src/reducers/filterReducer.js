@@ -2,8 +2,7 @@ import JSON from "../products.json";
 import {
   SELECT_TYPE,
   SELECT_PRICE,
-  SELECT_BRAND,
-  FILTER
+  SELECT_BRAND
 } from "../actions/filterActions";
 
 const filterDefaultState = {
@@ -25,18 +24,6 @@ const filterReducer = (state = filterDefaultState, action) => {
       return { ...state, price: action.payload };
     case SELECT_BRAND:
       return { ...state, brand: action.payload };
-    case FILTER:
-      let newData = state.products;
-      if (state.type !== "all") {
-        newData = newData.filter(item => item.type === state.type);
-      }
-      if (state.brand !== "all") {
-        newData = newData.filter(item => item.brand === state.brand);
-      }
-      return {
-        ...state,
-        filteredProducts: newData
-      };
     default:
       return state;
   }

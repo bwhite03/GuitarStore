@@ -5,7 +5,7 @@
     "image": "img/products/epiphone-EJ-200.jpg",
     "brand": "epiphone",
     "title": "Epiphone EJ-200SCE",
-    "price": "105"
+    "price": 105
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "image": "img/products/fender-FA-125.jpg",
     "brand": "fender",
     "title": "Fender FA-125 Dreadnought",
-    "price": "149"
+    "price": 149
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "image": "img/products/gibson-les-paul-standard-60s.jpg",
     "brand": "gibson",
     "title": "Gibson Les Paul Standard '60s",
-    "price": "2499"
+    "price": 2499
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "image": "img/products/ibanez-GRGR120EX.jpg",
     "brand": "ibanez",
     "title": "Ibanez GRGR120EX",
-    "price": "199"
+    "price": 199
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "image": "img/products/yamaha-TRBX174EW.jpg",
     "brand": "yamaha",
     "title": "Yamaha TRBX174EW Mango Wood",
-    "price": "224"
+    "price": 224
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "image": "img/products/squier-FSR.jpg",
     "brand": "squier",
     "title": "Squier FSR Classic Vibe '70s",
-    "price": "399"
+    "price": 399
   }
 ]

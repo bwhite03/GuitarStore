@@ -1,7 +1,6 @@
 export const SELECT_TYPE = "SELECT_TYPE";
 export const SELECT_PRICE = "SELECT_PRICE";
 export const SELECT_BRAND = "SELECT_BRAND";
-export const FILTER = "FILTER";
 
 export const selectType = e => ({
   type: SELECT_TYPE,
@@ -16,8 +15,4 @@ export const selectPrice = e => ({
 export const selectBrand = e => ({
   type: SELECT_BRAND,
   payload: e.target.value
-});
-
-export const filter = () => ({
-  type: FILTER
 });

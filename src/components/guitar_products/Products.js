@@ -8,7 +8,7 @@ const Products = props => {
     <section className="products">
       <Sort />
       <div className="items-container">
-        {props.products.map((items, index) => (
+        {props.filteredProducts.map((items, index) => (
           <Items item={items} key={index} />
         ))}
       </div>
@@ -17,8 +17,18 @@ const Products = props => {
 };
 
 const mapStateToProps = state => {
+  let newData = state.filterReducer.products;
+  if (state.filterReducer.type !== "all") {
+    newData = newData.filter(item => item.type === state.filterReducer.type);
+  }
+  if (state.filterReducer.price !== "all") {
+    newData = newData.filter(item => item.price >= state.filterReducer.price);
+  }
+  if (state.filterReducer.brand !== "all") {
+    newData = newData.filter(item => item.brand === state.filterReducer.brand);
+  }
   return {
-    products: state.filterReducer.products
+    filteredProducts: newData
   };
 };
 

@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 import {
   selectType,
   selectPrice,
-  selectBrand,
-  filter
+  selectBrand
 } from "../../actions/filterActions";
 
 const Filter = props => {
@@ -41,12 +40,11 @@ const Filter = props => {
         <option value="squier">Squier</option>
         <option value="yamaha">Yamaha</option>
       </select>
-      <button onClick={props.filter}>Filter</button>
     </section>
   );
 };
 
 export default connect(
   null,
-  { selectType, selectPrice, selectBrand, filter }
+  { selectType, selectPrice, selectBrand }
 )(Filter);
