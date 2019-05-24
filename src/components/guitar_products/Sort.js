@@ -1,6 +1,8 @@
 import React from "react";
+import { connect } from "react-redux";
+import { selectSort } from "../../actions/filterActions";
 
-const Sort = () => {
+const Sort = props => {
   return (
     <div className="sort">
       <div className="sort-header">
@@ -10,11 +12,9 @@ const Sort = () => {
       <div className="sort-body">
         <div>
           <label className="sort-label">Sort:</label>
-          <select className="sort-filter">
+          <select className="sort-filter" onChange={props.selectSort}>
             <option value="ascending">Price: Ascending</option>
             <option value="descending">Price: Descending</option>
-            <option value="a-z">A to Z</option>
-            <option value="z-a">Z to A</option>
           </select>
         </div>
         <div className="sort-icons">
@@ -26,4 +26,9 @@ const Sort = () => {
   );
 };
 
-export default Sort;
+export default connect(
+  null,
+  {
+    selectSort
+  }
+)(Sort);

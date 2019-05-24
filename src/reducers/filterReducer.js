@@ -2,7 +2,8 @@ import JSON from "../products.json";
 import {
   SELECT_TYPE,
   SELECT_PRICE,
-  SELECT_BRAND
+  SELECT_BRAND,
+  SELECT_SORT
 } from "../actions/filterActions";
 
 const filterDefaultState = {
@@ -10,7 +11,8 @@ const filterDefaultState = {
   filteredProducts: JSON,
   type: "all",
   price: "all",
-  brand: "all"
+  brand: "all",
+  sort: "ascending"
 };
 
 const filterReducer = (state = filterDefaultState, action) => {
@@ -24,6 +26,8 @@ const filterReducer = (state = filterDefaultState, action) => {
       return { ...state, price: action.payload };
     case SELECT_BRAND:
       return { ...state, brand: action.payload };
+    case SELECT_SORT:
+      return { ...state, sort: action.payload };
     default:
       return state;
   }

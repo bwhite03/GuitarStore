@@ -27,6 +27,13 @@ const mapStateToProps = state => {
   if (state.filterReducer.brand !== "all") {
     newData = newData.filter(item => item.brand === state.filterReducer.brand);
   }
+  if (state.filterReducer.sort === "ascending") {
+    newData.sort((a, b) => a.price - b.price);
+  }
+  if (state.filterReducer.sort === "descending") {
+    newData.sort((a, b) => b.price - a.price);
+  }
+  console.log(newData);
   return {
     filteredProducts: newData
   };
