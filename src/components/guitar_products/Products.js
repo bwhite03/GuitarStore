@@ -33,7 +33,6 @@ const mapStateToProps = state => {
   if (state.filterReducer.sort === "descending") {
     newData = newData.slice().sort((a, b) => b.price - a.price);
   }
-  console.log(newData);
   return {
     filteredProducts: newData
   };

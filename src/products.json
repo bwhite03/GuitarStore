@@ -46,5 +46,53 @@
     "brand": "squier",
     "title": "Squier FSR Classic Vibe '70s",
     "price": 399
+  },
+  {
+    "id": 7,
+    "type": "acoustic-guitar",
+    "image": "img/products/yamaha-A-series.jpg",
+    "brand": "yamaha",
+    "title": "Yamaha A-Series A3R",
+    "price": 899
+  },
+  {
+    "id": 8,
+    "type": "electric-guitar",
+    "image": "img/products/fender-Special-Edition-Standard.jpg",
+    "brand": "fender",
+    "title": "Fender Special Edition Standard",
+    "price": 599
+  },
+  {
+    "id": 9,
+    "type": "electric-bass",
+    "image": "img/products/gibson-EB.jpg",
+    "brand": "gibson",
+    "title": "Gibson EB",
+    "price": 1249
+  },
+  {
+    "id": 10,
+    "type": "acoustic-guitar",
+    "image": "img/products/ibanez-PN12E.jpg",
+    "brand": "ibanez",
+    "title": "Ibanez PN12E",
+    "price": 199
+  },
+  {
+    "id": 11,
+    "type": "electric-guitar",
+    "image": "img/products/epiphone-les-paul-Pro.jpg",
+    "brand": "epiphone",
+    "title": "Epiphone Les Paul Custom Pro",
+    "price": 679
+  },
+  {
+    "id": 12,
+    "type": "electric-bass",
+    "image": "img/products/squier-classic-vibe.jpg",
+    "brand": "squier",
+    "title": "Squier Classic Vibe",
+    "price": 429
   }
 ]
