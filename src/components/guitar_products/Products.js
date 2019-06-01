@@ -9,7 +9,7 @@ const Products = props => {
       <Sort />
       <div className="items-container">
         {props.filteredProducts.map((items, index) => (
-          <Items item={items} key={index} />
+          <Items item={items} key={items.id} />
         ))}
       </div>
     </section>

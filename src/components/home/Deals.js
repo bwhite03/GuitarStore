@@ -4,7 +4,7 @@ const Deals = () => {
   return (
     <section className="deals">
       <div className="deal-container">
-        <img src="img/deals/deals.jpg" />
+        <img src="img/deals/deals.jpg" alt="deal" />
         <div className="deal-info">
           <h2>DEALS UP TO 25% OFF</h2>
           <h4>Now thru May 20</h4>
@@ -13,7 +13,7 @@ const Deals = () => {
         </div>
       </div>
       <div className="deal-container">
-        <img src="img/deals/speakers.jpg" />
+        <img src="img/deals/speakers.jpg" alt="deal" />
         <div className="deal-info">
           <h2>Up to $100 Off</h2>
           <h2>Select Speakers</h2>
@@ -21,7 +21,7 @@ const Deals = () => {
         </div>
       </div>
       <div className="deal-container">
-        <img src="img/deals/phone.jpg" />
+        <img src="img/deals/phone.jpg" alt="deal" />
         <div className="deal-info">
           <h2>DOWNLOAD THE APP</h2>
           <h4>Avalible on iPhone and Android</h4>

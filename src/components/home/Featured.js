@@ -26,35 +26,35 @@ const Featured = () => {
       <div>
         <Slider {...settings}>
           <div className="featured-item">
-            <img src="img/featured/slider1.jpg" />
+            <img src="img/featured/slider1.jpg" alt="guitar" />
             <h4>Epiphone Les Paul Special II</h4>
           </div>
           <div className="featured-item">
-            <img src="img/featured/slider2.jpg" />
+            <img src="img/featured/slider2.jpg" alt="guitar" />
             <h4>Schecter Research C-1</h4>
           </div>
           <div className="featured-item">
-            <img src="img/featured/slider3.jpg" />
+            <img src="img/featured/slider3.jpg" alt="guitar" />
             <h4>Ibanez RGA Series</h4>
           </div>
           <div className="featured-item">
-            <img src="img/featured/slider4.jpg" />
+            <img src="img/featured/slider4.jpg" alt="guitar" />
             <h4>Taylor 200 Series 2017</h4>
           </div>
           <div className="featured-item">
-            <img src="img/featured/slider5.jpg" />
+            <img src="img/featured/slider5.jpg" alt="guitar" />
             <h4>Gibson 2018 SJ-200 Standard</h4>
           </div>
           <div className="featured-item">
-            <img src="img/featured/slider6.jpg" />
+            <img src="img/featured/slider6.jpg" alt="guitar" />
             <h4>Fender FA-135CE</h4>
           </div>
           <div className="featured-item">
-            <img src="img/featured/slider7.jpg" />
+            <img src="img/featured/slider7.jpg" alt="guitar" />
             <h4>Warwick RockBass Corvette</h4>
           </div>
           <div className="featured-item">
-            <img src="img/featured/slider8.jpg" />
+            <img src="img/featured/slider8.jpg" alt="guitar" />
             <h4>Rogue LX205B</h4>
           </div>
         </Slider>
