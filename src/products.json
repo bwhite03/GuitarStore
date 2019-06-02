@@ -3,25 +3,34 @@
     "id": 1,
     "type": "acoustic-guitar",
     "image": "img/products/epiphone-EJ-200.jpg",
+    "itemImg": "img/item-img/epiphone-EJ-200SCE-item-img.png",
     "brand": "epiphone",
     "title": "Epiphone EJ-200SCE",
-    "price": 105
+    "description": "Epiphone's version of the Gibson classic J-200, known as the King of the Flat Tops, a guitar that has graced stages across the world in the hands of musical legends from Elvis to Emmylou. This modernized EJ-200SCE, features a jumbo select maple body with a solid spruce top, a stylish mustache bridge, gold hardware, crown inlays on the fingerboard.",
+    "price": 105,
+    "logo": "img/logo/epiphone-logo.jpg"
   },
   {
     "id": 2,
     "type": "acoustic-guitar",
     "image": "img/products/fender-FA-125.jpg",
+    "itemImg": "img/item-img/fender-FA-125-item.png",
     "brand": "fender",
     "title": "Fender FA-125 Dreadnought",
-    "price": 149
+    "description": "Fender's FA-125 is a visually stunning entry-level guitar with a budget-friendly price. It has a quality laminate spruce and basswood construction with a modern Fender 3+3 headstock and stylish Viking bridge which combine to create an easy-playing instrument that sounds great. Beginners and developing players will appreciate this guitar",
+    "price": 149,
+    "logo": "img/logo/fender-logo.jpg"
   },
   {
     "id": 3,
     "type": "electric-guitar",
     "image": "img/products/gibson-les-paul-standard-60s.jpg",
+    "itemImg": "img/item-img/gibson-les-paul-standard-60s-item.png",
     "brand": "gibson",
     "title": "Gibson Les Paul Standard '60s",
-    "price": 2499
+    "description": "Classic designs never die, and the Les Paul only grew in popularity over the years. The 1960s version was adopted by scores of guitarists who went on to become legends in their own right. This Les Paul Standard '60s features a solid mahogany body with an AA figured maple top, and a slim taper 60's-style mahogany neck with a rosewood fingerboard.",
+    "price": 2499,
+    "logo": "img/logo/gibson-logo.webp"
   },
   {
     "id": 4,
@@ -29,7 +38,8 @@
     "image": "img/products/ibanez-GRGR120EX.jpg",
     "brand": "ibanez",
     "title": "Ibanez GRGR120EX",
-    "price": 199
+    "price": 199,
+    "logo": "img/logo/ibanez-logo.webp"
   },
   {
     "id": 5,
@@ -37,7 +47,8 @@
     "image": "img/products/yamaha-TRBX174EW.jpg",
     "brand": "yamaha",
     "title": "Yamaha TRBX174EW Mango Wood",
-    "price": 224
+    "price": 224,
+    "logo": "img/logo/yamaha-logo.webp"
   },
   {
     "id": 6,
@@ -45,7 +56,8 @@
     "image": "img/products/squier-FSR.jpg",
     "brand": "squier",
     "title": "Squier FSR Classic Vibe '70s",
-    "price": 399
+    "price": 399,
+    "logo": "img/logo/squier-logo.jpg"
   },
   {
     "id": 7,
@@ -53,7 +65,8 @@
     "image": "img/products/yamaha-A-series.jpg",
     "brand": "yamaha",
     "title": "Yamaha A-Series A3R",
-    "price": 899
+    "price": 899,
+    "logo": "img/logo/yamaha-logo.webp"
   },
   {
     "id": 8,
@@ -61,7 +74,8 @@
     "image": "img/products/fender-Special-Edition-Standard.jpg",
     "brand": "fender",
     "title": "Fender Special Edition Standard",
-    "price": 599
+    "price": 599,
+    "logo": "img/logo/fender-logo.jpg"
   },
   {
     "id": 9,
@@ -69,7 +83,8 @@
     "image": "img/products/gibson-EB.jpg",
     "brand": "gibson",
     "title": "Gibson EB",
-    "price": 1249
+    "price": 1249,
+    "logo": "img/logo/gibson-logo.webp"
   },
   {
     "id": 10,
@@ -77,7 +92,8 @@
     "image": "img/products/ibanez-PN12E.jpg",
     "brand": "ibanez",
     "title": "Ibanez PN12E",
-    "price": 199
+    "price": 199,
+    "logo": "img/logo/ibanez-logo.webp"
   },
   {
     "id": 11,
@@ -85,7 +101,8 @@
     "image": "img/products/epiphone-les-paul-Pro.jpg",
     "brand": "epiphone",
     "title": "Epiphone Les Paul Custom Pro",
-    "price": 679
+    "price": 679,
+    "logo": "img/logo/epiphone-logo.jpg"
   },
   {
     "id": 12,
@@ -93,6 +110,7 @@
     "image": "img/products/squier-classic-vibe.jpg",
     "brand": "squier",
     "title": "Squier Classic Vibe",
-    "price": 429
+    "price": 429,
+    "logo": "img/logo/squier-logo.jpg"
   }
 ]

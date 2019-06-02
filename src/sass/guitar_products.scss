@@ -83,20 +83,124 @@ a {
       font-size: 20px;
     }
   }
-  // button {
-  //   text-transform: uppercase;
-  //   width: 100%;
-  //   border: 1px solid #313848;
-  //   padding: 10px;
-  //   cursor: pointer;
-  //   background: white;
-  //   color: #313848;
-  //   transition: 0.8s;
-  //   &:hover {
-  //     color: white;
-  //     background: #313848;
-  //   }
-  // }
 }
 
 // Item
+.product-item {
+  font-family: "Roboto", sans-serif;
+  width: 95%;
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 30px 0;
+  h1 {
+    font-size: 30px;
+    color: #313848;
+  }
+}
+
+.item-container {
+  padding-top: 30px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.product-img {
+  text-align: center;
+}
+
+.product-info {
+  .product-description {
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 10px;
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #313848;
+    }
+    p {
+      padding-top: 10px;
+      line-height: 1.2;
+      color: #313848;
+    }
+  }
+  .product-in-stock {
+    padding: 10px 0;
+    border-bottom: 1px solid #d3d3d3;
+    h1 {
+      font-size: 20px;
+      color: green;
+    }
+    p {
+      padding-top: 10px;
+      color: #313848;
+    }
+  }
+  .product-icons {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .product-brand {
+    padding-top: 10px;
+  }
+}
+
+.product-cart {
+  .product-questions {
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      padding: 10px 0;
+    }
+  }
+  .product-add-to-cart {
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    margin: 10px 0;
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 40px;
+      padding-top: 10px;
+    }
+    button {
+      width: 100%;
+      border: 1px solid #313848;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+      background: #313848;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+  .product-shipping {
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+    .fa-store-alt {
+      font-size: 20px;
+    }
+    .product-shipping-container {
+      padding-left: 10px;
+      h1 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      p {
+        padding-top: 10px;
+      }
+    }
+  }
+}
