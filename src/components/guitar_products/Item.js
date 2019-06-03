@@ -1,5 +1,7 @@
 import React from "react";
 import JSON from "../../products.json";
+import { connect } from "react-redux";
+import { addItem } from "../../actions/cartActions";
 
 const Item = props => {
   let id = props.match.params.item_id;
@@ -11,7 +13,7 @@ const Item = props => {
       <h1>{item.title}</h1>
       <div className="item-container">
         <div className="product-img">
-          <img src={item.itemImg} />
+          <img src={item.itemImg} alt="guitar" />
         </div>
         <div className="product-info">
           <div className="product-description">
@@ -40,7 +42,7 @@ const Item = props => {
             </p>
           </div>
           <div className="product-brand">
-            <img src={item.logo} />
+            <img src={item.logo} alt="logo" />
           </div>
         </div>
         <div className="product-cart">
@@ -57,7 +59,9 @@ const Item = props => {
           <div className="product-add-to-cart">
             <h1>Price:</h1>
             <h2>${item.price}</h2>
-            <button>Add to Cart</button>
+            <button onClick={props.addItem.bind(null, item)}>
+              Add to Cart
+            </button>
           </div>
           <div className="product-shipping">
             <i className="fas fa-store-alt" />
@@ -72,4 +76,7 @@ const Item = props => {
   );
 };
 
-export default Item;
+export default connect(
+  null,
+  { addItem }
+)(Item);
