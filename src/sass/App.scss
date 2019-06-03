@@ -7,6 +7,10 @@
 @import "guitar_products.scss";
 @import url("https://fonts.googleapis.com/css?family=Carter+One|Roboto&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   overflow-x: hidden;
