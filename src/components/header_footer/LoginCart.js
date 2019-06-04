@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class LoginCart extends Component {
   render() {
@@ -8,10 +9,10 @@ class LoginCart extends Component {
           <i className="fas fa-user-circle" />
           Login
         </a>
-        <a href="#">
+        <Link to="/cart">
           <i className="fas fa-shopping-cart" />
           Cart
-        </a>
+        </Link>
       </div>
     );
   }

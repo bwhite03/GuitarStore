@@ -5,6 +5,7 @@ import Home from "./components/home/Home";
 import Header from "./components/header_footer/Header";
 import Footer from "./components/header_footer/Footer";
 import GuitarProducts from "./components/guitar_products/GuitarProducts";
+import Cart from "./components/cart/Cart";
 import Item from "./components/guitar_products/Item";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
@@ -24,6 +25,7 @@ const Router = () => {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/guitar-products" component={GuitarProducts} />
+            <Route exact path="/cart" component={Cart} />
             <Route exact path="/:item_id" component={Item} />
           </Switch>
           <Footer />

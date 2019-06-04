@@ -1,0 +1,29 @@
+.cart {
+  font-family: "Roboto", sans-serif;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 50px;
+  padding: 30px 0;
+  color: #313848;
+}
+
+.empty-cart {
+  padding-top: 30px;
+  text-align: center;
+  p {
+    padding-top: 30px;
+    font-size: 16px;
+    color: #313848;
+  }
+  button {
+    margin-top: 20px;
+    border: 1px solid #313848;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    background: #313848;
+    font-family: "Roboto", sans-serif;
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import LoginCart from "./LoginCart";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,13 +12,13 @@ const Header = () => {
         </div>
         <ul className="nav">
           <li>
-            <a href="#">Products</a>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/guitar-products">Products</Link>
           </li>
           <li>
             <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Deals</a>
           </li>
         </ul>
       </nav>
