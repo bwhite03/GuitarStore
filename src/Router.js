@@ -21,13 +21,15 @@ const Router = () => {
     <Provider store={store}>
       <BrowserRouter>
         <div>
-          <Header />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/guitar-products" component={GuitarProducts} />
-            <Route exact path="/cart" component={Cart} />
-            <Route exact path="/:item_id" component={Item} />
-          </Switch>
+          <div className="wrapper">
+            <Header />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/guitar-products" component={GuitarProducts} />
+              <Route exact path="/cart" component={Cart} />
+              <Route exact path="/:item_id" component={Item} />
+            </Switch>
+          </div>
           <Footer />
         </div>
       </BrowserRouter>

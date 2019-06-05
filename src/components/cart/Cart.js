@@ -10,7 +10,7 @@ const Cart = props => {
         <div className="cart-display">
           {props.cartItems.length === 0 ? (
             <div className="empty-cart">
-              <img src="img/cart/empty-cart.webp" alt="empty cart" />
+              <i className="fas fa-shopping-cart" />
               <p>Your cart is currently empty</p>
               <Link to="/guitar-products">
                 <button>Continue Shopping</button>
