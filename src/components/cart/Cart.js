@@ -36,7 +36,11 @@ const Cart = props => {
                 </tbody>
               </table>
               <div className="cart-total">
-                <h1>Cart Total</h1>
+                <h1>Subtotal: $100</h1>
+                <p>Shipping & taxes calculated at checkout</p>
+                <button>
+                  <i className="far fa-check-square" /> Checkout
+                </button>
               </div>
             </div>
           )}
@@ -49,7 +53,7 @@ const Cart = props => {
 
 const mapStateToProps = state => {
   return {
-    cartItems: state.cartReducer
+    cartItems: state.cartReducer.cart
   };
 };
 
