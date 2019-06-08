@@ -1,5 +1,8 @@
 .cart {
   font-family: "Roboto", sans-serif;
+  width: 95%;
+  max-width: 1520px;
+  margin: 0 auto;
 }
 
 .cart-title {
@@ -28,5 +31,31 @@
     cursor: pointer;
     background: #313848;
     font-family: "Roboto", sans-serif;
+  }
+}
+
+.full-cart {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 30px 0;
+  .cart-table {
+    tr {
+      th {
+        padding: 10px;
+      }
+      border-top: 1px solid #f5f5f5;
+      border-bottom: 1px solid #f5f5f5;
+      td {
+        vertical-align: middle;
+        text-align: center;
+        padding: 10px 0;
+        img {
+          width: 100px;
+        }
+      }
+      .cartItem-title {
+        text-align: left;
+      }
+    }
   }
 }

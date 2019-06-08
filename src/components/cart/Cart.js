@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import CartItems from "./CartItems";
 
 const Cart = props => {
   return (
@@ -17,7 +18,27 @@ const Cart = props => {
               </Link>
             </div>
           ) : (
-            <p>Cart Items</p>
+            <div className="full-cart">
+              <table className="cart-table">
+                <thead>
+                  <tr>
+                    <th />
+                    <th>Product</th>
+                    <th />
+                    <th>Price</th>
+                    <th>Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {props.cartItems.map((items, index) => (
+                    <CartItems item={items} key={items.id} />
+                  ))}
+                </tbody>
+              </table>
+              <div className="cart-total">
+                <h1>Cart Total</h1>
+              </div>
+            </div>
           )}
         </div>
         <div className="cart-checkout" />

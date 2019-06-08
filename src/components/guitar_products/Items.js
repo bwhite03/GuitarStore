@@ -12,7 +12,6 @@ const Items = props => {
           <h2>{props.item.title}</h2>
           <h3>${props.item.price}</h3>
         </div>
-        {/* <button>Add To Cart</button> */}
       </div>
     </Link>
   );
