@@ -1,7 +1,8 @@
 import { ADD_ITEM, DELETE_ITEM } from "../actions/cartActions";
 
 const cartDefaultState = {
-  cart: []
+  cart: [],
+  total: 0
 };
 
 const cartReducer = (state = cartDefaultState, action) => {
