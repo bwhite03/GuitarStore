@@ -45,7 +45,6 @@ const Cart = props => {
             </div>
           )}
         </div>
-        <div className="cart-checkout" />
       </div>
     </section>
   );
@@ -53,8 +52,9 @@ const Cart = props => {
 
 const mapStateToProps = state => {
   let newTotal = state.cartReducer.total;
+  let newQuantity = state.cartReducer.quantity;
   state.cartReducer.cart.map(item => {
-    return (newTotal += item.price);
+    return (newTotal += item.price * newQuantity);
   });
 
   return {

@@ -27,6 +27,7 @@
     margin-top: 20px;
     border: 1px solid #313848;
     padding: 10px;
+    margin-bottom: 50px;
     color: white;
     cursor: pointer;
     background: #313848;
@@ -87,6 +88,18 @@
       background: #313848;
       margin-top: 20px;
       font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .full-cart {
+    flex-direction: column;
+    .cart-table {
+      width: 100%;
+    }
+    .cart-total {
+      width: 100%;
     }
   }
 }

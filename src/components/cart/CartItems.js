@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { deleteItem } from "../../actions/cartActions";
+import { deleteItem, selectQuantity } from "../../actions/cartActions";
 
 const CartItems = props => {
   return (
@@ -12,12 +12,12 @@ const CartItems = props => {
         />
       </td>
       <td>
-        <img src={props.item.image} />
+        <img src={props.item.image} alt="cart item" />
       </td>
       <td className="cartItem-title">{props.item.title}</td>
       <td>${props.item.price}</td>
       <td>
-        <input type="number" min="1" max="10" />
+        <input type="number" min="1" max="9" onChange={props.selectQuantity} />
       </td>
     </tr>
   );
@@ -25,5 +25,5 @@ const CartItems = props => {
 
 export default connect(
   null,
-  { deleteItem }
+  { deleteItem, selectQuantity }
 )(CartItems);
