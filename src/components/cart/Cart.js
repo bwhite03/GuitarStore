@@ -25,12 +25,12 @@ const Cart = props => {
                     <th />
                     <th>Product</th>
                     <th />
+                    <th>Brand</th>
                     <th>Price</th>
-                    <th>Quantity</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {props.cartItems.map((items, index) => (
+                  {props.cartItems.map(items => (
                     <CartItems item={items} key={items.id} />
                   ))}
                 </tbody>
@@ -52,9 +52,8 @@ const Cart = props => {
 
 const mapStateToProps = state => {
   let newTotal = state.cartReducer.total;
-  let newQuantity = state.cartReducer.quantity;
   state.cartReducer.cart.map(item => {
-    return (newTotal += item.price * newQuantity);
+    return (newTotal += item.price);
   });
 
   return {

@@ -59,7 +59,13 @@ const Item = props => {
           <div className="product-add-to-cart">
             <h1>Price:</h1>
             <h2>${item.price}</h2>
-            <button onClick={props.addItem.bind(null, item)}>
+            <button
+              onClick={
+                props.cartItem.includes(item.id)
+                  ? null
+                  : props.addItem.bind(null, item)
+              }
+            >
               Add to Cart
             </button>
           </div>
@@ -76,7 +82,14 @@ const Item = props => {
   );
 };
 
+const mapStateToProps = state => {
+  let itemId = state.cartReducer.cart.map(item => item.id);
+  return {
+    cartItem: itemId
+  };
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   { addItem }
 )(Item);

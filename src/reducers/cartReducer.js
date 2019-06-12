@@ -1,9 +1,8 @@
-import { ADD_ITEM, DELETE_ITEM, SELECT_QUANTITY } from "../actions/cartActions";
+import { ADD_ITEM, DELETE_ITEM } from "../actions/cartActions";
 
 const cartDefaultState = {
   cart: [],
-  total: 0,
-  quantity: 1
+  total: 0
 };
 
 const cartReducer = (state = cartDefaultState, action) => {
@@ -14,11 +13,6 @@ const cartReducer = (state = cartDefaultState, action) => {
       return {
         ...state,
         cart: state.cart.filter(item => item.id !== action.payload)
-      };
-    case SELECT_QUANTITY:
-      return {
-        ...state,
-        quantity: action.payload
       };
     default:
       return state;
