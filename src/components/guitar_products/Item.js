@@ -6,8 +6,6 @@ import { addItem } from "../../actions/cartActions";
 const Item = props => {
   let id = props.match.params.item_id;
   let item = JSON[id - 1];
-  console.log(item);
-
   return (
     <div className="product-item">
       <h1>{item.title}</h1>
@@ -68,6 +66,7 @@ const Item = props => {
             >
               Add to Cart
             </button>
+            {props.cartItem.includes(item.id) && <h1>Item is in cart</h1>}
           </div>
           <div className="product-shipping">
             <i className="fas fa-store-alt" />
