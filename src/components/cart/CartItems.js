@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { deleteItem } from "../../actions/cartActions";
+import { deleteItem } from "../../store/actions/cartActions";
 
 const CartItems = props => {
   return (

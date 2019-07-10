@@ -40,7 +40,7 @@ main {
   text-align: left;
   font-size: 25px;
   font-family: "Carter One", cursive;
-  color: #313848;
+  color: $text-color;
 }
 
 .items {
@@ -63,19 +63,19 @@ main {
   h2 {
     font-family: "Carter One", cursive;
     font-size: 25px;
-    color: #313848;
+    color: $text-color;
   }
   .btn {
     margin-top: 15px;
     display: inline-block;
     padding: 10px;
     color: #313848;
-    border: 2px solid #313848;
+    border: 2px solid $text-color;
     cursor: pointer;
     transition: 0.8s;
     &:hover {
       color: white;
-      background: #313848;
+      background: $text-color;
     }
   }
 }
@@ -92,7 +92,7 @@ main {
   padding-bottom: 30px;
   font-size: 25px;
   font-family: "Carter One", cursive;
-  color: #313848;
+  color: $text-color;
 }
 
 .featured-item {
@@ -135,19 +135,18 @@ main {
     font-size: 30px;
     font-family: "Carter One", cursive;
     text-align: center;
-    color: #313848;
+    color: $text-color;
   }
   h4 {
     font-size: 20px;
     padding: 10px 0;
     font-family: "Carter One", cursive;
     text-align: center;
-    color: #313848;
+    color: $text-color;
   }
   p {
     text-align: center;
-    color: #666;
-    color: #313848;
+    color: $text-color;
   }
 }
 
@@ -179,5 +178,14 @@ main {
 @media screen and (max-width: 1000px) {
   .deals {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .items {
+    text-align: center;
+  }
+  .item {
+    display: block;
   }
 }

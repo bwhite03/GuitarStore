@@ -1,0 +1,39 @@
+html,
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding-bottom: 120px;
+}
+
+@media screen and (max-width: 1430px) {
+  .wrapper {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .wrapper {
+    padding-bottom: 140px;
+  }
+}
+
+@media screen and (max-width: 1103px) {
+  .wrapper {
+    padding-bottom: 380px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    padding-bottom: 370px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    padding-bottom: 400px;
+  }
+}

@@ -9,7 +9,7 @@ import Cart from "./components/cart/Cart";
 import Item from "./components/guitar_products/Item";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import combineReducer from "./reducers/combineReducer";
+import combineReducer from "./store/reducers/combineReducer";
 
 // Local storage
 

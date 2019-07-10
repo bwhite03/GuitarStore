@@ -4,7 +4,7 @@ import {
   selectType,
   selectPrice,
   selectBrand
-} from "../../actions/filterActions";
+} from "../../store/actions/filterActions";
 
 const Filter = props => {
   return (
@@ -23,10 +23,10 @@ const Filter = props => {
         <option value="all" defaultValue>
           All
         </option>
-        <option value="100">100+</option>
-        <option value="250">250+</option>
-        <option value="400">400+</option>
-        <option value="650">650+</option>
+        <option value="100">$100+</option>
+        <option value="250">$250+</option>
+        <option value="400">$400+</option>
+        <option value="650">$650+</option>
       </select>
       <label className="filter-label">Brand</label>
       <select className="filter-menu" onChange={props.selectBrand}>

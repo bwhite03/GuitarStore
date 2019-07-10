@@ -1,7 +1,7 @@
 import React from "react";
 import JSON from "../../products.json";
 import { connect } from "react-redux";
-import { addItem } from "../../actions/cartActions";
+import { addItem } from "../../store/actions/cartActions";
 
 const Item = props => {
   let id = props.match.params.item_id;

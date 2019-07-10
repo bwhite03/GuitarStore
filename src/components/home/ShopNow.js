@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ShopNow = () => {
   return (
@@ -9,21 +10,27 @@ const ShopNow = () => {
           <img src="img/shopnow/acoustic.png" alt="guitar" />
           <div className="shopnow-container">
             <h2>Acoustic Guitars</h2>
-            <div className="btn">Shop Now</div>
+            <Link to="/guitar-products" className="btn">
+              Shop Now
+            </Link>
           </div>
         </div>
         <div className="item electric">
           <img src="img/shopnow/electric.png" alt="guitar" />
           <div className="shopnow-container">
             <h2>Electric Guitars</h2>
-            <div className="btn">Shop Now</div>
+            <Link to="/guitar-products" className="btn">
+              Shop Now
+            </Link>
           </div>
         </div>
         <div className="item bass">
           <img src="img/shopnow/bass.png" alt="guitar" />
           <div className="shopnow-container">
             <h2>Electric Basses</h2>
-            <div className="btn">Shop Now</div>
+            <Link to="/guitar-products" className="btn">
+              Shop Now
+            </Link>
           </div>
         </div>
       </div>

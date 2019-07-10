@@ -1,4 +1,4 @@
-import JSON from "../products.json";
+import JSON from "../../products.json";
 import {
   SELECT_TYPE,
   SELECT_PRICE,

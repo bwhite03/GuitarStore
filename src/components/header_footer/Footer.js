@@ -21,19 +21,32 @@ const Footer = () => {
           <button>Sign Up</button>
         </div>
         <div className="footer-social-media">
-          <a href="#">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-facebook-f" />
           </a>
-          <a href="#">
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-twitter" />
           </a>
-          <a href="#">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-instagram" />
           </a>
-          <a href="#">
-            <i className="fab fa-google-plus-g" />
-          </a>
-          <a href="#">
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-youtube" />
           </a>
         </div>
