@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./sass/App.scss";
-import Home from "./components/home/Home";
-import Header from "./components/header_footer/Header";
-import Footer from "./components/header_footer/Footer";
-import GuitarProducts from "./components/guitar_products/GuitarProducts";
-import Cart from "./components/cart/Cart";
-import Item from "./components/guitar_products/Item";
+import "./App.scss";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import HomePage from "./pages/home-page/HomePage";
+import ShopPage from "./pages/shop-page/ShopPage";
+import ItemPage from "./pages/item-page/ItemPage";
+import CartPage from "./pages/cart-page/CartPage";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import combineReducer from "./store/reducers/combineReducer";
@@ -35,10 +35,10 @@ const Router = () => {
           <div className="wrapper">
             <Header />
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/guitar-products" component={GuitarProducts} />
-              <Route exact path="/cart" component={Cart} />
-              <Route exact path="/:item_id" component={Item} />
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/guitar-products" component={ShopPage} />
+              <Route exact path="/cart" component={CartPage} />
+              <Route exact path="/:item_id" component={ItemPage} />
             </Switch>
           </div>
           <Footer />

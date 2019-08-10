@@ -1,0 +1,27 @@
+.sort-header {
+  display: flex;
+  .fa-home {
+    padding-right: 5px;
+  }
+  h2 {
+    border-left: 1px solid black;
+    padding-left: 5px;
+  }
+}
+
+.sort-body {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  .sort-label {
+    padding-right: 10px;
+  }
+}
+
+.sort-icons {
+  .fa-bars,
+  .fa-th {
+    padding: 0 5px;
+    font-size: 20px;
+  }
+}

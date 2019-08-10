@@ -1,0 +1,50 @@
+@import "reset.scss";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import url("https://fonts.googleapis.com/css?family=Carter+One|Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding-bottom: 120px;
+}
+
+@media screen and (max-width: 1430px) {
+  .wrapper {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .wrapper {
+    padding-bottom: 140px;
+  }
+}
+
+@media screen and (max-width: 1103px) {
+  .wrapper {
+    padding-bottom: 380px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    padding-bottom: 370px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    padding-bottom: 400px;
+  }
+}

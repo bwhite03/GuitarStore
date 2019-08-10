@@ -1,0 +1,21 @@
+.login-mycart {
+  background: #080808;
+  border-bottom: 1px solid #1f1f1f;
+  padding: 10px 30px;
+  text-align: right;
+}
+
+.login-mycart a {
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-user-circle,
+.fa-shopping-cart {
+  padding: 0 5px;
+}
+
+.login-mycart .items-in-cart {
+  padding-left: 5px;
+}

@@ -1,0 +1,67 @@
+.shopnow {
+  padding-top: 30px;
+
+  .shopnow-title {
+    text-align: left;
+    font-size: 25px;
+    font-family: "Carter One", cursive;
+    color: #313848;
+  }
+
+  .items {
+    width: 100%;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .item {
+    display: flex;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 10px;
+  }
+
+  .shopnow-container {
+    align-self: center;
+    h2 {
+      font-family: "Carter One", cursive;
+      font-size: 25px;
+      color: #313848;
+    }
+    .btn {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px;
+      color: #313848;
+      border: 2px solid #313848;
+      cursor: pointer;
+      transition: 0.8s;
+      &:hover {
+        color: white;
+        background: #313848;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .shopnow {
+    .items {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .shopnow {
+    .items {
+      text-align: center;
+      grid-template-columns: 1fr;
+    }
+    .item {
+      display: block;
+    }
+  }
+}

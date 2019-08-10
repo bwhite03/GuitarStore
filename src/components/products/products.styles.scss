@@ -1,0 +1,40 @@
+.products {
+  width: 90%;
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1430px) {
+  .items-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .items-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .item-container {
+    grid-template-columns: 1fr;
+  }
+  .product-img {
+    img {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .guitar-products {
+    flex-direction: column;
+  }
+  .filter {
+    width: 100%;
+  }
+  .products {
+    width: 100%;
+  }
+  .items-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+.featured {
+  padding-top: 30px;
+  width: 100%;
+  margin: 0 auto;
+
+  .featured-title {
+    text-align: left;
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-family: "Carter One", cursive;
+    color: #313848;
+  }
+
+  .featured-item {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    img {
+      margin: 0 auto;
+    }
+    h4 {
+      padding-top: 10px;
+    }
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  font-size: 25px;
+}
