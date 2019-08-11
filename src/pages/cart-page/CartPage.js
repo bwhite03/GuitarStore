@@ -3,6 +3,7 @@ import "./cart-page.styles.scss";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import CartItems from "../../components/cart-items/CartItems";
+import StripeButton from "../../components/stripe-button/StripeButton";
 
 const CartPage = props => {
   return (
@@ -12,7 +13,7 @@ const CartPage = props => {
         <div className="cart-display">
           {props.cartItems.length === 0 ? (
             <div className="empty-cart">
-              <i className="fas fa-shopping-cart" />
+              <i className="fa fa-shopping-bag" aria-hidden="true" />
               <p>Your cart is currently empty</p>
               <Link to="/guitar-products">
                 <button>Continue Shopping</button>
@@ -39,9 +40,7 @@ const CartPage = props => {
               <div className="cart-total">
                 <h1>Subtotal: ${props.total}.00</h1>
                 <p>Shipping & taxes calculated at checkout</p>
-                <button>
-                  <i className="far fa-check-square" /> Checkout
-                </button>
+                <StripeButton price={props.total} />
               </div>
             </div>
           )}

@@ -12,7 +12,7 @@ class LoginCart extends Component {
           Login
         </Link>
         <Link to="/cart">
-          <i className="fas fa-shopping-cart" />
+          <i className="fas fa-shopping-bag" />
           Cart <span className="items-in-cart">{this.props.cartItems}</span>
         </Link>
       </div>
