@@ -7,6 +7,7 @@ import HomePage from "./pages/home-page/HomePage";
 import ShopPage from "./pages/shop-page/ShopPage";
 import ItemPage from "./pages/item-page/ItemPage";
 import CartPage from "./pages/cart-page/CartPage";
+import LoginPage from "./pages/login-page/LoginPage";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import combineReducer from "./store/reducers/combineReducer";
@@ -38,6 +39,7 @@ const Router = () => {
               <Route exact path="/" component={HomePage} />
               <Route exact path="/guitar-products" component={ShopPage} />
               <Route exact path="/cart" component={CartPage} />
+              <Route exact path="/login" component={LoginPage} />
               <Route exact path="/:item_id" component={ItemPage} />
             </Switch>
           </div>
