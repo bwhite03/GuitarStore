@@ -1,19 +1,6 @@
 .banner-img {
-  background: url("../../img/banner.jpg") no-repeat center center fixed;
+  background: url("https://static.guitarcenter.com/static/gc/selects/2019/d-home/gc-md-hf-pioneer-08-08-19.jpg")
+    center no-repeat;
   background-size: cover;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-
-  .box {
-    align-self: center;
-    border: 10px double #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    h1 {
-      color: white;
-      font-size: 30px;
-      font-family: "Carter One", cursive;
-    }
-  }
+  height: 350px;
 }
