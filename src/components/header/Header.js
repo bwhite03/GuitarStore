@@ -3,10 +3,10 @@ import "./header.styles.scss";
 import LoginCart from "../login/LoginCart";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = props => {
   return (
     <header>
-      <LoginCart />
+      <LoginCart currentUser={props.currentUser} />
       <nav>
         <div className="logo">
           <h1>Guitar World</h1>

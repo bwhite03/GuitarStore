@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/header/Header";
@@ -8,6 +8,7 @@ import ShopPage from "./pages/shop-page/ShopPage";
 import ItemPage from "./pages/item-page/ItemPage";
 import CartPage from "./pages/cart-page/CartPage";
 import LoginPage from "./pages/login-page/LoginPage";
+import { auth, createUserProfileDocument } from "./firebase/firebase";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import combineReducer from "./store/reducers/combineReducer";
@@ -28,26 +29,63 @@ store.subscribe(() => {
   localStorage.setItem("reduxState", JSON.stringify(store.getState()));
 });
 
-const Router = () => {
-  return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <div>
-          <div className="wrapper">
-            <Header />
-            <Switch>
-              <Route exact path="/" component={HomePage} />
-              <Route exact path="/guitar-products" component={ShopPage} />
-              <Route exact path="/cart" component={CartPage} />
-              <Route exact path="/login" component={LoginPage} />
-              <Route exact path="/:item_id" component={ItemPage} />
-            </Switch>
+class Router extends Component {
+  constructor() {
+    super();
+    this.state = {
+      currentUser: null
+    };
+  }
+
+  unsubscribeFromAuth = null;
+
+  componentDidMount() {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      if (userAuth) {
+        const userRef = await createUserProfileDocument(userAuth);
+
+        userRef.onSnapshot(snapShot => {
+          this.setState(
+            {
+              currentUser: {
+                id: snapShot.id,
+                ...snapShot.data()
+              }
+            },
+            () => console.log(this.state)
+          );
+        });
+      } else {
+        this.setState({ currentUser: userAuth });
+      }
+    });
+  }
+
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
+  }
+
+  render() {
+    return (
+      <Provider store={store}>
+        <BrowserRouter>
+          <div>
+            <div className="wrapper">
+              <Header currentUser={this.state.currentUser} />
+              <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/guitar-products" component={ShopPage} />
+                <Route exact path="/cart" component={CartPage} />
+                <Route exact path="/login" component={LoginPage} />
+                <Route exact path="/:item_id" component={ItemPage} />
+              </Switch>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </Provider>
-  );
-};
+        </BrowserRouter>
+      </Provider>
+    );
+  }
+}
 
 export default Router;
