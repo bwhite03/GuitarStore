@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -76,7 +76,13 @@ class Router extends Component {
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/guitar-products" component={ShopPage} />
                 <Route exact path="/cart" component={CartPage} />
-                <Route exact path="/login" component={LoginPage} />
+                <Route
+                  exact
+                  path="/login"
+                  render={() =>
+                    this.state.currentUser ? <Redirect to="/" /> : <LoginPage />
+                  }
+                />
                 <Route exact path="/:item_id" component={ItemPage} />
               </Switch>
             </div>

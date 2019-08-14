@@ -47,49 +47,51 @@ class SignUp extends Component {
   render() {
     return (
       <div className="sign-up">
-        <h2>I do not have an account</h2>
-        <span>Sign up with your email and password</span>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            type="text"
-            name="displayName"
-            label="Display Name"
-            onChange={this.handleChange}
-            value={this.state.displayName}
-            placeholder="Display Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            label="email"
-            onChange={this.handleChange}
-            value={this.state.email}
-            placeholder="Email"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            label="password"
-            onChange={this.handleChange}
-            value={this.state.password}
-            placeholder="Password"
-            required
-          />
-          <input
-            type="password"
-            name="confirmPassword"
-            label="confirmPassword"
-            onChange={this.handleChange}
-            value={this.state.confirmPassword}
-            placeholder="confirmPassword"
-            required
-          />
-          <div className="buttons">
-            <button type="submit">Sign Up</button>
-          </div>
-        </form>
+        <div className="sign-up-container">
+          <h2>I do not have an account</h2>
+          <span>Sign up with your email and password</span>
+          <form onSubmit={this.handleSubmit}>
+            <input
+              type="text"
+              name="displayName"
+              label="Display Name"
+              onChange={this.handleChange}
+              value={this.state.displayName}
+              placeholder="Display Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              label="email"
+              onChange={this.handleChange}
+              value={this.state.email}
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              label="password"
+              onChange={this.handleChange}
+              value={this.state.password}
+              placeholder="Password"
+              required
+            />
+            <input
+              type="password"
+              name="confirmPassword"
+              label="confirmPassword"
+              onChange={this.handleChange}
+              value={this.state.confirmPassword}
+              placeholder="Confirm Password"
+              required
+            />
+            <div className="buttons">
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
       </div>
     );
   }

@@ -24,3 +24,9 @@ a {
     }
   }
 }
+
+@media screen and (max-width: 1430px) {
+  .items-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
