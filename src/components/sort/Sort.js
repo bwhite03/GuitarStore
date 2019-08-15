@@ -22,10 +22,6 @@ const Sort = props => {
             <option value="descending">Price: Descending</option>
           </select>
         </div>
-        <div className="sort-icons">
-          <i className="fas fa-bars" />
-          <i className="fas fa-th" />
-        </div>
       </div>
     </div>
   );

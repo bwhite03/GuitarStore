@@ -28,7 +28,6 @@ const LoginCart = props => {
 
 const mapStateToProps = state => {
   let itemsInCart = state.cartReducer.cart.length;
-  console.log(itemsInCart);
   return {
     cartItems: itemsInCart
   };

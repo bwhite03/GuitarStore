@@ -1,0 +1,33 @@
+.sidebar {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  right: 0;
+  background: #1f1f1f;
+  z-index: 1;
+  background: #080808;
+  border-bottom: 1px solid #1f1f1f;
+
+  .fa-bars {
+    padding: 10.5px 15px;
+    text-align: right;
+    border-bottom: 1px solid #1f1f1f;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  ul {
+    padding-top: 5px;
+    a {
+      color: white;
+      padding: 10px 15px;
+      display: block;
+      cursor: pointer;
+
+      &:hover {
+        background: #1f1f1f;
+      }
+    }
+  }
+}

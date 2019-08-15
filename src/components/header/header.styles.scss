@@ -8,6 +8,13 @@ nav {
   background: black;
   display: flex;
   justify-content: space-between;
+
+  .fa-bars {
+    color: white;
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
 }
 
 .logo h1 {
@@ -28,5 +35,11 @@ nav {
 @media screen and (max-width: 1090px) {
   .nav {
     display: none;
+  }
+
+  nav {
+    .fa-bars {
+      display: block;
+    }
   }
 }

@@ -9,25 +9,8 @@ import ItemPage from "./pages/item-page/ItemPage";
 import CartPage from "./pages/cart-page/CartPage";
 import LoginPage from "./pages/login-page/LoginPage";
 import { auth, createUserProfileDocument } from "./firebase/firebase";
-import { createStore } from "redux";
 import { Provider } from "react-redux";
-import combineReducer from "./store/reducers/combineReducer";
-
-// Local storage
-
-const persistedState = localStorage.getItem("reduxState")
-  ? JSON.parse(localStorage.getItem("reduxState"))
-  : {};
-
-const store = createStore(
-  combineReducer,
-  persistedState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-
-store.subscribe(() => {
-  localStorage.setItem("reduxState", JSON.stringify(store.getState()));
-});
+import { store } from "./store/store";
 
 class Router extends Component {
   constructor() {
@@ -45,15 +28,12 @@ class Router extends Component {
         const userRef = await createUserProfileDocument(userAuth);
 
         userRef.onSnapshot(snapShot => {
-          this.setState(
-            {
-              currentUser: {
-                id: snapShot.id,
-                ...snapShot.data()
-              }
-            },
-            () => console.log(this.state)
-          );
+          this.setState({
+            currentUser: {
+              id: snapShot.id,
+              ...snapShot.data()
+            }
+          });
         });
       } else {
         this.setState({ currentUser: userAuth });
