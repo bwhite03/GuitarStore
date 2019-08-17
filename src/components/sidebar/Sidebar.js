@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Animated } from "react-animated-css";
 import "./sidebar.styles.scss";
 
 function Sidebar(props) {
   return (
-    <div className="sidebar">
+    <Animated
+      className="sidebar"
+      animationIn="slideInRight"
+      animationOut="fadeOut"
+      isVisible={true}
+    >
       <i className="fas fa-bars" onClick={props.handleSidebar} />
       <ul>
         <Link to="/" onClick={props.handleSidebar}>
@@ -19,7 +25,7 @@ function Sidebar(props) {
           Services
         </Link>
       </ul>
-    </div>
+    </Animated>
   );
 }
 
