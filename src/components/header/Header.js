@@ -16,6 +16,12 @@ class Header extends Component {
     this.setState({
       showSidebar: !this.state.showSidebar
     });
+
+    if (!this.state.showSidebar) {
+      document.querySelector("html").style.overflow = "hidden";
+    } else {
+      document.querySelector("html").style.overflow = "auto";
+    }
   };
 
   render() {

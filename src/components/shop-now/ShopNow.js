@@ -8,7 +8,10 @@ const ShopNow = () => {
       <h2 className="shopnow-title">Shop Now</h2>
       <div className="items">
         <div className="item acoustic">
-          <img src="img/shopnow/acoustic.png" alt="guitar" />
+          <img
+            src="https://i.ibb.co/DGfwTBW/yamaha-A-series.jpg"
+            alt="guitar"
+          />
           <div className="shopnow-container">
             <h2>Acoustic Guitars</h2>
             <Link to="/guitar-products" className="btn">
@@ -17,7 +20,10 @@ const ShopNow = () => {
           </div>
         </div>
         <div className="item electric">
-          <img src="img/shopnow/electric.png" alt="guitar" />
+          <img
+            src="https://i.ibb.co/cC3phVV/ibanez-GRGR120-EX.jpg"
+            alt="guitar"
+          />
           <div className="shopnow-container">
             <h2>Electric Guitars</h2>
             <Link to="/guitar-products" className="btn">
@@ -26,7 +32,7 @@ const ShopNow = () => {
           </div>
         </div>
         <div className="item bass">
-          <img src="img/shopnow/bass.png" alt="guitar" />
+          <img src="https://i.ibb.co/JvYhN9v/gibson-EB.jpg" alt="guitar" />
           <div className="shopnow-container">
             <h2>Electric Basses</h2>
             <Link to="/guitar-products" className="btn">

@@ -16,11 +16,9 @@ function Sidebar(props) {
         <Link to="/" onClick={props.handleSidebar}>
           Home
         </Link>
-
         <Link to="/guitar-products" onClick={props.handleSidebar}>
           Products
         </Link>
-
         <Link to="/" onClick={props.handleSidebar}>
           Services
         </Link>

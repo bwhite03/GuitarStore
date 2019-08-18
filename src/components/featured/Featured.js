@@ -30,50 +30,68 @@ const Featured = () => {
         <Slider {...settings}>
           <Link to="/1">
             <div className="featured-item">
-              <img src="img/products/epiphone-EJ-200.jpg" alt="guitar" />
+              <img
+                src="https://i.ibb.co/BGh1Z6D/epiphone-EJ-200.jpg"
+                alt="guitar"
+              />
               <h4>Epiphone EJ-200</h4>
             </div>
           </Link>
           <Link to="/2">
             <div className="featured-item">
-              <img src="img/products/fender-FA-125.jpg" alt="guitar" />
+              <img
+                src="https://i.ibb.co/K2BpPpg/fender-FA-125.jpg"
+                alt="guitar"
+              />
               <h4>Fender FA-125</h4>
             </div>
           </Link>
           <Link to="/9">
             <div className="featured-item">
-              <img src="img/products/gibson-EB.jpg" alt="guitar" />
+              <img src="https://i.ibb.co/JvYhN9v/gibson-EB.jpg" alt="guitar" />
               <h4>Gibson EB</h4>
             </div>
           </Link>
           <Link to="/4">
             <div className="featured-item">
-              <img src="img/products/ibanez-GRGR120EX.jpg" alt="guitar" />
+              <img
+                src="https://i.ibb.co/cC3phVV/ibanez-GRGR120-EX.jpg"
+                alt="guitar"
+              />
               <h4>Ibanez GRGR120EX</h4>
             </div>
           </Link>
           <Link to="/12">
             <div className="featured-item">
-              <img src="img/products/squier-classic-vibe.jpg" alt="guitar" />
+              <img
+                src="https://i.ibb.co/R9dP4T8/squier-classic-vibe.jpg"
+                alt="guitar"
+              />
               <h4>Squier FSR Classic Vibe '70s</h4>
             </div>
           </Link>
           <Link to="/7">
             <div className="featured-item">
-              <img src="img/products/yamaha-A-series.jpg" alt="guitar" />
+              <img
+                src="https://i.ibb.co/DGfwTBW/yamaha-A-series.jpg"
+                alt="guitar"
+              />
               <h4>Yamaha A-Series A3R</h4>
             </div>
           </Link>
           <Link to="/11">
             <div className="featured-item">
-              <img src="img/products/epiphone-les-paul-Pro.jpg" alt="guitar" />
+              <img
+                src="https://i.ibb.co/KKYKnzy/epiphone-les-paul-Pro.jpg"
+                alt="guitar"
+              />
               <h4>Epiphone Les Paul Custom Pro</h4>
             </div>
           </Link>
           <Link to="/8">
             <div className="featured-item">
               <img
-                src="img/products/fender-Special-Edition-Standard.jpg"
+                src="https://i.ibb.co/YbZgTTF/fender-Special-Edition-Standard.jpg"
                 alt="guitar"
               />
               <h4>Fender Special Edition Standard</h4>
