@@ -1,4 +1,5 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
+import thunk from "redux-thunk";
 import combineReducer from "./reducers/combineReducer";
 
 // Local storage
@@ -10,7 +11,10 @@ const persistedState = localStorage.getItem("reduxState")
 export const store = createStore(
   combineReducer,
   persistedState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  compose(
+    applyMiddleware(thunk),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
 );
 
 store.subscribe(() => {

@@ -1,21 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
 import "./products.styles.scss";
 import Sort from "../sort/Sort";
 import Items from "../items/Items";
 import { connect } from "react-redux";
+import { fetchData } from "../../store/actions/filterActions";
 
-const Products = props => {
-  return (
-    <section className="products">
-      <Sort />
-      <div className="items-container">
-        {props.filteredProducts.map((items, index) => (
-          <Items item={items} key={items.id} />
-        ))}
-      </div>
-    </section>
-  );
-};
+class Products extends Component {
+  componentDidMount() {
+    this.props.fetchData();
+  }
+
+  render() {
+    return (
+      <section className="products">
+        <Sort />
+        <div className="items-container">
+          {this.props.filteredProducts.map((items, index) => (
+            <Items item={items} key={index} />
+          ))}
+        </div>
+      </section>
+    );
+  }
+}
 
 const mapStateToProps = state => {
   let newData = state.filterReducer.products;
@@ -41,5 +48,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  null
+  { fetchData }
 )(Products);
