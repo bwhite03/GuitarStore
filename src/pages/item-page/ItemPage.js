@@ -1,23 +1,25 @@
 import React from "react";
 import "./item-page.styles.scss";
-import JSON from "../../products.json";
 import { connect } from "react-redux";
 import { addItem } from "../../store/actions/cartActions";
 
 const ItemPage = props => {
-  let id = props.match.params.item_id;
-  let item = JSON[id - 1];
+  let id = parseInt(props.match.params.item_id);
+  let currentItem = props.item.filter(item => {
+    return item.id === id;
+  });
+  currentItem = currentItem[0];
   return (
     <div className="product-item">
-      <h1>{item.title}</h1>
+      <h1>{currentItem.title}</h1>
       <div className="item-container">
         <div className="product-img">
-          <img src={item.itemImg} alt="guitar" />
+          <img src={currentItem.itemImg} alt="guitar" />
         </div>
         <div className="product-info">
           <div className="product-description">
             <h1>Product Description</h1>
-            <p>{item.description}</p>
+            <p>{currentItem.description}</p>
           </div>
           <div className="product-in-stock">
             <h1>In Stock & Ready to Ship</h1>
@@ -41,7 +43,7 @@ const ItemPage = props => {
             </p>
           </div>
           <div className="product-brand">
-            <img src={item.logo} alt="logo" />
+            <img src={currentItem.logo} alt="logo" />
           </div>
         </div>
         <div className="product-cart">
@@ -57,17 +59,19 @@ const ItemPage = props => {
           </div>
           <div className="product-add-to-cart">
             <h1>Price:</h1>
-            <h2>${item.price}</h2>
+            <h2>${currentItem.price}</h2>
             <button
               onClick={
-                props.cartItem.includes(item.id)
+                props.cartItem.includes(currentItem.id)
                   ? null
-                  : props.addItem.bind(null, item)
+                  : props.addItem.bind(null, currentItem)
               }
             >
               Add to Cart
             </button>
-            {props.cartItem.includes(item.id) && <h1>Item is in cart</h1>}
+            {props.cartItem.includes(currentItem.id) && (
+              <h1>Item is in cart</h1>
+            )}
           </div>
           <div className="product-shipping">
             <i className="fas fa-store-alt" />
@@ -85,7 +89,8 @@ const ItemPage = props => {
 const mapStateToProps = state => {
   let itemId = state.cartReducer.cart.map(item => item.id);
   return {
-    cartItem: itemId
+    cartItem: itemId,
+    item: state.filterReducer.products
   };
 };
 

@@ -1,4 +1,3 @@
-import JSON from "../../products.json";
 import {
   FETCH_DATA,
   SELECT_TYPE,
@@ -8,8 +7,8 @@ import {
 } from "../actions/filterActions";
 
 const filterDefaultState = {
-  products: JSON,
-  filteredProducts: JSON,
+  products: [],
+  filteredProducts: [],
   type: "all",
   price: "all",
   brand: "all",
