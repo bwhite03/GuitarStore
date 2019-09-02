@@ -19,7 +19,7 @@ function Sidebar(props) {
         <Link to="/guitar-products" onClick={props.handleSidebar}>
           Products
         </Link>
-        <Link to="/" onClick={props.handleSidebar}>
+        <Link to="/services" onClick={props.handleSidebar}>
           Services
         </Link>
       </ul>

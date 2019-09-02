@@ -8,6 +8,7 @@ import ShopPage from "./pages/shop-page/ShopPage";
 import ItemPage from "./pages/item-page/ItemPage";
 import CartPage from "./pages/cart-page/CartPage";
 import LoginPage from "./pages/login-page/LoginPage";
+import ServicePage from "./pages/services-page/ServicesPage";
 import { auth, createUserProfileDocument } from "./firebase/firebase";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
@@ -56,6 +57,7 @@ class Router extends Component {
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/guitar-products" component={ShopPage} />
                 <Route exact path="/cart" component={CartPage} />
+                <Route exact path="/services" component={ServicePage} />
                 <Route
                   exact
                   path="/login"

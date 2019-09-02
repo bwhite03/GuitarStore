@@ -44,7 +44,7 @@ class Header extends Component {
               <Link to="/guitar-products">Products</Link>
             </li>
             <li>
-              <a href="/">Services</a>
+              <Link to="/services">Services</Link>
             </li>
           </ul>
         </nav>
