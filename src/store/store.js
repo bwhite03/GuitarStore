@@ -11,10 +11,7 @@ const persistedState = localStorage.getItem("reduxState")
 export const store = createStore(
   combineReducer,
   persistedState,
-  compose(
-    applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
+  compose(applyMiddleware(thunk))
 );
 
 store.subscribe(() => {

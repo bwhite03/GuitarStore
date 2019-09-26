@@ -1,8 +1,8 @@
 import React from "react";
 import "./banner.styles.scss";
 
-const Banner = () => {
-  return <div className="banner-img" />;
+const Banner = ({ name }) => {
+  return <div className={name} />;
 };
 
 export default Banner;

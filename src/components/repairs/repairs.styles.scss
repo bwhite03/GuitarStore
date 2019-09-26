@@ -1,0 +1,55 @@
+.repairs {
+  h1 {
+    color: #313848;
+    font-size: 25px;
+    font-family: "Carter One", cursive;
+  }
+
+  h2 {
+    color: #313848;
+    font-family: "Carter One", cursive;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  p {
+    color: #313848;
+    padding-top: 20px;
+  }
+
+  .repair-types {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+    li {
+      padding: 5px 0;
+      color: #313848;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .repairs {
+    .repair-types {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .repairs {
+    .repair-types {
+      grid-template-columns: 1fr;
+    }
+  }
+}

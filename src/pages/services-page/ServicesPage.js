@@ -1,10 +1,13 @@
 import React from "react";
 import "./services-page.styles.scss";
+import Repairs from "../../components/repairs/Repairs";
 
 const ServicesPage = () => {
   return (
     <div>
-      <h1>Services Page</h1>
+      <div className="services-container">
+        <Repairs />
+      </div>
     </div>
   );
 };

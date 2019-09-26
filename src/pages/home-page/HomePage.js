@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <main>
-        <Banner />
+        <Banner name="home-banner" />
         <div className="home-container">
           <ShopNow />
           <Featured />
