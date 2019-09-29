@@ -68,3 +68,13 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .sign-in {
+    .sign-in-container {
+      .google-btn {
+        margin-top: 5px;
+      }
+    }
+  }
+}
